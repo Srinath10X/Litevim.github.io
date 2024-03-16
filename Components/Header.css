@@ -2,6 +2,15 @@
   font-weight: bold;
   font-size: 1.5rem;
   padding: 0 1rem;
+  background: -webkit-linear-gradient(
+    45deg,
+    #89b4fa,
+    #74c7ec,
+    #89dceb,
+    #94e2d5
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar {
