@@ -37,7 +37,7 @@ const Header = () => {
       <header>
         <nav class="navbar">
           <a href="#" class="logo">
-            Litevim
+            Litevim ⚡
           </a>
           <ul class="nav-menu">
             <li class="nav-item">
@@ -68,7 +68,7 @@ const Header = () => {
           </div>
           <div className="dark">
             <button className="btn">
-              {/* <p className="sun">&#9788;</p> */}
+              <p className="sun">&#9788;</p>
               <p className="moon">&#9789;</p>
             </button>
           </div>
