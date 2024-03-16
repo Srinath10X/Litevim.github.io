@@ -3,16 +3,22 @@ import "./Main.css";
 import { useEffect } from "react";
 import Typed from "typed.js";
 import Button from "./Buttons/Button";
+import Image from "next/image";
 
 const Main = () => {
   useEffect(() => {
     const options = {
-      strings: ["Type your text here.", "Add more strings as needed."],
-      typeSpeed: 50, // Typing speed
-      backSpeed: 50, // Backspacing speed
-      backDelay: 2000, // Delay before starting to backspace
-      startDelay: 1000, // Delay before starting to type after initialization
+      strings: [
+        "Type your text here.",
+        "Add more strings as needed.",
+        "Modify them to see the changes",
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 2000,
+      startDelay: 1000,
       loop: true,
+      cursorChar: "|",
     };
 
     // Initialize Typed.js
@@ -33,12 +39,20 @@ const Main = () => {
             <span id="typing-element"></span>
           </div>
           <p>
-            A lightweight, easily configurable Neovim setup for a swift and
-            clean editing experience.
+            A lightweight, easily configurable Neovim setup for a swift editing
+            experience.
           </p>
           <Button />
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <Image
+            src="/logo.png"
+            width={200}
+            height={300}
+            alt="Picture of the author"
+            className="img litevim-logo"
+          />
+        </div>
       </main>
     </>
   );

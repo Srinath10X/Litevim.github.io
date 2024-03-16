@@ -4,6 +4,7 @@
 
 /* ----- Root Variables ----- */
 :root {
+  /* ----- Catppuccin Colors ----- */
   --rosewater: #f5e0dc;
   --flamingo: #f2cdcd;
   --pink: #f5c2e7;
@@ -30,6 +31,15 @@
   --base: #1e1e2e;
   --mantle: #181825;
   --crust: #11111b;
+
+  /* ----- Typed Cursor ----- */
+  --cursor-font-size: 1.25rem;
+  --cursor-line-height: 1rem;
+  --typed-font-size: 1.5rem;
+
+  /* ----- Main Section ----- */
+  --main-title-fontsize: 3rem;
+  --main-desc-fontsize: 1.125rem;
 }
 
 * {
