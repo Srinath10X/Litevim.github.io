@@ -46,11 +46,11 @@ const Main = () => {
         </div>
         <div className="right">
           <Image
-            src="/logo.png"
-            width={200}
-            height={300}
-            alt="Picture of the author"
-            className="img litevim-logo"
+            src="/litevim.png"
+            width={1360}
+            height={720}
+            alt="Picture of Litevim"
+            className="img glow"
           />
         </div>
       </main>

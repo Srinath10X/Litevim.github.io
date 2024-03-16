@@ -26,6 +26,7 @@
 
 .nav-link {
   transition: 0.5s ease;
+  font-weight: bold;
 }
 
 .nav-link:hover {
@@ -114,8 +115,9 @@
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background: var(--base);
+    background: transparent;
     transition: 0.3s;
+    z-index: 1;
   }
 
   .nav-item {
