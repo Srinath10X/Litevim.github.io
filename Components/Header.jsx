@@ -1,8 +1,11 @@
 "use client";
 import React, { useEffect } from "react";
 import "./Header.css";
+import config from "../config/config.json";
 
 const Header = () => {
+  const { Navlink } = config;
+
   useEffect(() => {
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
@@ -37,27 +40,28 @@ const Header = () => {
       <header>
         <nav class="navbar">
           <a href="#" class="logo">
-            Litevim <span>⚡</span>
+            {config.Header_logo}
+            <span>⚡</span>
           </a>
           <ul class="nav-menu">
             <li class="nav-item">
               <a href="#" class="nav-link">
-                Home
+                {Navlink.link1}
               </a>
             </li>
             <li class="nav-item">
               <a href="#ab" class="nav-link">
-                About
+                {Navlink.link2}
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                Work
+                {Navlink.link3}
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                Contact
+                {Navlink.link4}
               </a>
             </li>
           </ul>

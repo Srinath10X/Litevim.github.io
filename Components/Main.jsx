@@ -4,8 +4,10 @@ import { useEffect } from "react";
 import Typed from "typed.js";
 import Button from "./Buttons/Button";
 import Image from "next/image";
+import config from "../config/config.json";
 
 const Main = () => {
+  const { Desc } = config;
   useEffect(() => {
     const options = {
       strings: [
@@ -38,10 +40,7 @@ const Main = () => {
           <div className="typed">
             <span id="typing-element"></span>
           </div>
-          <p>
-            A lightweight, easily configurable Neovim setup for a swift editing
-            experience.
-          </p>
+          <p>{Desc.string1}</p>
           <Button />
         </div>
         <div className="right">
