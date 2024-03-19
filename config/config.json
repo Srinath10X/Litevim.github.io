@@ -2,13 +2,12 @@
   "Header_logo": "Litevim ",
 
   "Navlink": {
-    "link1": "Home",
-    "link2": "About",
-    "link3": "Work",
-    "link4": "Contact"
+    "link1": "Docs",
+    "link2": "Blog",
+    "link3": "Donate"
   },
 
   "Desc": {
-    "string1": "A lightweight, easily configurable Neovim setup for a swift editing experience."
+    "string1": "Where speed meets style. Editing made lightning-fast with a touch of elegance."
   }
 }
